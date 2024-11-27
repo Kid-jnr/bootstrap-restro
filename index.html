@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Bites Restaurant</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><b>Delicious Bites</b></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center">
+            <h1 class="display-4 text-white">
+              <b>Welcome to Delicious Bites</b>
+            </h1>
+            <a href="#menu" class="btn btn-primary btn-lg">View Our Menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Menu</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="./top-view-grilled.jpg"
+                class="card-img-top"
+                alt="Grilled Salmon"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Grilled Salmon</h5>
+                <p class="card-text">
+                  Fresh Atlantic salmon grilled to perfection, served with
+                  roasted vegetables and lemon butter sauce.
+                </p>
+                <p class="card-text"><strong>$24.99</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="./fried-meat-table.jpg"
+                class="card-img-top"
+                alt="Beef Tenderloin"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beef Tenderloin</h5>
+                <p class="card-text">
+                  Juicy beef tenderloin cooked to your liking, accompanied by
+                  mashed potatoes and seasonal vegetables.
+                </p>
+                <p class="card-text"><strong>$29.99</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="./penne-pasta.jpg"
+                class="card-img-top"
+                alt="Vegetarian Pasta"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vegetarian Pasta</h5>
+                <p class="card-text">
+                  Homemade pasta tossed with fresh vegetables, herbs, and a
+                  light cream sauce.
+                </p>
+                <p class="card-text"><strong>$18.99</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img
+              src="./attractive-woman.jpg"
+              class="img-fluid rounded"
+              alt="Restaurant Interior"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-4">About Delicious Bites</h2>
+            <p>
+              Delicious Bites is a family-owned restaurant that has been serving
+              the community for over 20 years. We take pride in using only the
+              freshest ingredients to create mouthwatering dishes that will
+              tantalize your taste buds.
+            </p>
+            <p>
+              Our talented chefs combine traditional recipes with modern
+              culinary techniques to bring you a unique dining experience.
+              Whether you're joining us for a romantic dinner, a family
+              celebration, or a quick lunch, we guarantee you'll leave satisfied
+              and eager to return.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2023 Delicious Bites. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="#" class="text-white me-3"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
